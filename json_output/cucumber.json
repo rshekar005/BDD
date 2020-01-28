@@ -3,192 +3,90 @@
     "line": 1,
     "elements": [
       {
-        "line": 26,
+        "line": 3,
         "name": "Atlas Login Scenario",
         "description": "",
-        "id": "login-feature-of-atlas;atlas-login-scenario;;2",
+        "id": "login-into-good-money-atlas;atlas-login-scenario",
         "type": "scenario",
-        "keyword": "Scenario Outline",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 12568236700,
+              "duration": 14885454400,
               "status": "passed"
             },
-            "line": 17,
+            "line": 5,
             "name": "User is already on login page",
             "match": {
-              "location": "LoginStepDefinitions.user_is_already_on_login_page()"
+              "location": "LoginwithDatatable.user_is_already_on_login_page()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 13640800,
+              "duration": 13424300,
               "status": "passed"
             },
-            "line": 18,
+            "line": 6,
             "name": "Title of Atlas",
             "match": {
-              "location": "LoginStepDefinitions.title_of_Atlas()"
+              "location": "LoginwithDatatable.title_of_Atlas()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 230199800,
+              "duration": 338563700,
               "status": "passed"
             },
-            "comments": [
+            "line": 7,
+            "name": "User enters username and password",
+            "match": {
+              "location": "LoginwithDatatable.user_enters_username_and_password(DataTable)"
+            },
+            "rows": [
               {
-                "line": 19,
-                "value": "#Then User enters username and password"
+                "cells": [
+                  "gmcare@goodmoney.com",
+                  "654321"
+                ],
+                "line": 8
               }
             ],
-            "line": 20,
-            "name": "User enters \"gmcare@goodmoney.com\" and \"654321\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "gmcare@goodmoney.com",
-                  "offset": 13
-                },
-                {
-                  "val": "654321",
-                  "offset": 40
-                }
-              ],
-              "location": "LoginStepDefinitions.user_enters_username_and_password(String,String)"
-            },
-            "matchedColumns": [
-              0,
-              1
-            ],
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 5103991000,
+              "duration": 110777900,
               "status": "passed"
             },
-            "line": 21,
+            "line": 9,
             "name": "User clicks on login button",
             "match": {
-              "location": "LoginStepDefinitions.user_clicks_on_login_button()"
+              "location": "LoginwithDatatable.user_clicks_on_login_button()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 117473600,
-              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[text()\u003d\u0027Invalid credentials!!\u0027]\"}\n  (Session info: chrome\u003d79.0.3945.130)\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.5.3\u0027, revision: \u0027a88d25fe6b\u0027, time: \u00272017-08-29T12:42:44.417Z\u0027\nSystem info: host: \u0027DESKTOP-B2426KB\u0027, ip: \u0027172.16.2.54\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_202\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d79.0.3945.36 (3582db32b33893869b8c1339e8f4d9ed1816f143-refs/branch-heads/3945@{#614}), userDataDir\u003dC:\\Users\\RAJASE~1\\AppData\\Local\\Temp\\scoped_dir16808_552217107}, timeouts\u003d{implicit\u003d0, pageLoad\u003d300000, script\u003d30000}, pageLoadStrategy\u003dnormal, unhandledPromptBehavior\u003ddismiss and notify, strictFileInteractability\u003dfalse, platform\u003dXP, proxy\u003dProxy(), goog:chromeOptions\u003d{debuggerAddress\u003dlocalhost:51267}, acceptInsecureCerts\u003dfalse, browserVersion\u003d79.0.3945.130, browserName\u003dchrome, javascriptEnabled\u003dtrue, platformName\u003dXP, setWindowRect\u003dtrue}]\nSession ID: 373cfdaf7ce43cc45cadd62db15b79ce\n*** Element info: {Using\u003dxpath, value\u003d//div[text()\u003d\u0027Invalid credentials!!\u0027]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.lang.reflect.Constructor.newInstance(Unknown Source)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:518)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:361)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)\r\n\tat stepDefinitions.LoginStepDefinitions.user_in_on_home_page(LoginStepDefinitions.java:58)\r\n\tat ✽.And user in on home page(login_with_datadriven.feature:22)\r\n",
+              "duration": 30317500,
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//h4[text()\u003d\u0027Atlas\u0027]\"}\n  (Session info: chrome\u003d79.0.3945.130)\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.5.3\u0027, revision: \u0027a88d25fe6b\u0027, time: \u00272017-08-29T12:42:44.417Z\u0027\nSystem info: host: \u0027DESKTOP-B2426KB\u0027, ip: \u0027192.168.43.67\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_202\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d79.0.3945.36 (3582db32b33893869b8c1339e8f4d9ed1816f143-refs/branch-heads/3945@{#614}), userDataDir\u003dC:\\Users\\RAJASE~1\\AppData\\Local\\Temp\\scoped_dir17560_1995167893}, timeouts\u003d{implicit\u003d0, pageLoad\u003d300000, script\u003d30000}, pageLoadStrategy\u003dnormal, unhandledPromptBehavior\u003ddismiss and notify, strictFileInteractability\u003dfalse, platform\u003dXP, proxy\u003dProxy(), goog:chromeOptions\u003d{debuggerAddress\u003dlocalhost:57417}, acceptInsecureCerts\u003dfalse, browserVersion\u003d79.0.3945.130, browserName\u003dchrome, javascriptEnabled\u003dtrue, platformName\u003dXP, setWindowRect\u003dtrue}]\nSession ID: daf3d01cb0645d6a123c75e7467aff48\n*** Element info: {Using\u003dxpath, value\u003d//h4[text()\u003d\u0027Atlas\u0027]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.lang.reflect.Constructor.newInstance(Unknown Source)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:518)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:361)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)\r\n\tat stepDefinitions.LoginwithDatatable.user_in_on_home_page(LoginwithDatatable.java:59)\r\n\tat ✽.And user in on home page(E:/Git/BasicsBDD/src/main/java/Features/login_with_datatabale.feature:10)\r\n",
               "status": "failed"
             },
-            "line": 22,
+            "line": 10,
             "name": "user in on home page",
             "match": {
-              "location": "LoginStepDefinitions.user_in_on_home_page()"
-            },
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "line": 27,
-        "name": "Atlas Login Scenario",
-        "description": "",
-        "id": "login-feature-of-atlas;atlas-login-scenario;;3",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 11562884900,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "User is already on login page",
-            "match": {
-              "location": "LoginStepDefinitions.user_is_already_on_login_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 7151100,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "Title of Atlas",
-            "match": {
-              "location": "LoginStepDefinitions.title_of_Atlas()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 182493200,
-              "status": "passed"
-            },
-            "comments": [
-              {
-                "line": 19,
-                "value": "#Then User enters username and password"
-              }
-            ],
-            "line": 20,
-            "name": "User enters \"rshekar005@gmail.com\" and \"123456\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "rshekar005@gmail.com",
-                  "offset": 13
-                },
-                {
-                  "val": "123456",
-                  "offset": 40
-                }
-              ],
-              "location": "LoginStepDefinitions.user_enters_username_and_password(String,String)"
-            },
-            "matchedColumns": [
-              0,
-              1
-            ],
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 5080038300,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "User clicks on login button",
-            "match": {
-              "location": "LoginStepDefinitions.user_clicks_on_login_button()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 33678200,
-              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//h4[text()\u003d\u0027Atlas\u0027]\"}\n  (Session info: chrome\u003d79.0.3945.130)\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.5.3\u0027, revision: \u0027a88d25fe6b\u0027, time: \u00272017-08-29T12:42:44.417Z\u0027\nSystem info: host: \u0027DESKTOP-B2426KB\u0027, ip: \u0027172.16.2.54\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_202\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d79.0.3945.36 (3582db32b33893869b8c1339e8f4d9ed1816f143-refs/branch-heads/3945@{#614}), userDataDir\u003dC:\\Users\\RAJASE~1\\AppData\\Local\\Temp\\scoped_dir16840_1581004791}, timeouts\u003d{implicit\u003d0, pageLoad\u003d300000, script\u003d30000}, pageLoadStrategy\u003dnormal, unhandledPromptBehavior\u003ddismiss and notify, strictFileInteractability\u003dfalse, platform\u003dXP, proxy\u003dProxy(), goog:chromeOptions\u003d{debuggerAddress\u003dlocalhost:51305}, acceptInsecureCerts\u003dfalse, browserVersion\u003d79.0.3945.130, browserName\u003dchrome, javascriptEnabled\u003dtrue, platformName\u003dXP, setWindowRect\u003dtrue}]\nSession ID: f13851ae46f04e08320537b8e2ea89f7\n*** Element info: {Using\u003dxpath, value\u003d//h4[text()\u003d\u0027Atlas\u0027]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.lang.reflect.Constructor.newInstance(Unknown Source)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:518)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:361)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)\r\n\tat stepDefinitions.LoginStepDefinitions.user_in_on_home_page(LoginStepDefinitions.java:57)\r\n\tat ✽.And user in on home page(login_with_datadriven.feature:22)\r\n",
-              "status": "failed"
-            },
-            "line": 22,
-            "name": "user in on home page",
-            "match": {
-              "location": "LoginStepDefinitions.user_in_on_home_page()"
+              "location": "LoginwithDatatable.user_in_on_home_page()"
             },
             "keyword": "And "
           }
         ]
       }
     ],
-    "name": "Login Feature of Atlas",
+    "name": "login into good money atlas",
     "description": "",
-    "id": "login-feature-of-atlas",
+    "id": "login-into-good-money-atlas",
     "keyword": "Feature",
-    "uri": "login_with_datadriven.feature"
+    "uri": "E:/Git/BasicsBDD/src/main/java/Features/login_with_datatabale.feature"
   }
 ]
